@@ -99,5 +99,7 @@ void flash_jump_to_app(void)
   /* Change the main stack pointer. */
   __set_MSP(*(volatile uint32_t*)FLASH_APP_START_ADDRESS);
   jump_to_app();
+ 
+  // 20250312 add notes
 }
 
